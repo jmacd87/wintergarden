@@ -1,14 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900&display=swap');
 :root {
-  --mainBlue: #2a2a72;
-  --lightBlue: #009ffd;
-  --mainWhite: #f3f3f3;
-  --mainDark: #232528;
-  --mainYellow: #ffa400;
+  --mainBrown: #231717;
+  --mainGrey: #9A8C7F;
+  --mainGreen: #9dad6f;
+  --mainBiege: #efd09e;
+  --mainTan: #d4aa7d;
+  --mainYellow: #ddba6e;
 }
 
 body {
-  font-family: "Oswald", sans-serif !important;
-  background: var(--mainWhite) !important;
+  font-family: 'Alegreya Sans SC'!important;
+  background: var(--mainGrey) !important;
   color: var(--mainDark) !important;
 }
 
@@ -19,7 +22,7 @@ body {
 }
 
 .text-blue {
-  color: var(--mainBlue);
+  color: var(--mainGreen);
 }
 
 .text-bright {
@@ -42,5 +45,314 @@ body {
 .cart-icon {
   cursor: pointer;
   font-size: 1.2rem;
-  color: var(--mainYellow);
+  color: var(--mainBiege);
 }
+
+.board {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: 10px;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+  
+}
+.sticker {
+  position: relative;
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  z-index: 2;
+  transition: transform 1s;
+}
+
+.sticker:hover {
+  transform: rotate(15deg);
+
+}
+.navbar p {
+  color: var(--mainGreen);
+  font-family: 'Alegreya Sans SC';
+}
+
+.container {
+  color: var(--mainBrown);
+  max-width: 1180px!important;
+  font-family: 'Alegreya Sans SC'!important;
+}
+.container h1, h4, h2{
+  text-align: center;
+  font-family: 'Alegreya Sans SC';
+}
+.container h2 {
+  color: var(--mainGreen);
+}
+.container h1 {
+  color: var(--mainBrown);
+}
+
+strong {
+  margin-top: 20px!important;
+}
+.navbar-brand{
+  opacity: .9;
+}
+.nav-link {
+  margin-top: 15px;
+  align-content: center;
+}
+.nav-link:hover {
+  margin-top: 15px;
+  transform: scale(1.2);
+  transition: .3s;
+}
+/* .nav-link:visited {
+  background-color: red !important;
+} */
+.nav-link.active{
+  transform:scale(1.2);
+}
+.icon {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  border-radius: 5px;
+  color: var(--mainGreen);
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Alegreya Sans SC';
+}
+
+/**
+ * The "shine" element
+ */
+
+.icon:after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  overflow:hidden;
+  transform: rotate(30deg);
+  background: linear-gradient(
+    to right, 
+    rgba(35, 23, 23, 0.13) 0%,
+    rgba(35, 23, 23, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0.0) 100%
+  );
+  -webkit-animation-duration: 5s;
+-webkit-animation-iteration-count: infinite;
+}
+
+/* Hover state - trigger effect */
+
+.icon:hover:after {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/* Active state */
+
+.icon:active:after {
+  opacity: 0;
+}
+
+.moose {
+  display: inline-block;
+  position:relative;
+  z-index: 1;
+}
+
+
+.bluejay {
+  display: inline-block;
+  position:relative;
+  width:300px !important;
+  height: 240px !important;
+  z-index: 2;
+
+}
+
+.fox {
+  display: inline-block;
+  position:relative;
+}
+
+/* .josh {
+  border: solid;
+  border-color: var(--mainBrown);
+  overflow:hidden;
+} */
+
+
+.contactForm input {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.contactForm {
+  width:30%;
+  margin-left: 35%;
+  margin-top:5%;
+  border: 3px;
+  border-color: var(--mainYellow);
+  
+  border-style: solid;
+  border-radius: 25px;
+  padding: 25px;
+  padding-right: 5px;
+  margin-bottom: 50px;
+}
+
+
+.contactForm input[type=submit] {
+  width: 90%;
+  border-radius: 15px;
+
+}
+.contactForm input[type=submit]:hover {
+  transition: 1s;
+  background-color:var(--mainYellow)
+
+}
+
+.contactForm textarea {
+  width: 90% !important;
+}
+
+.hexWrapper {
+	text-align: center;
+  margin-top: 80px;
+  margin-bottom: 0px;
+	position: relative;
+	display: inline-block;
+	width: 430px;
+	height: 500px;
+	min-width: 150px;
+	min-height: 150px;
+	float:left;
+}			
+	
+.hexagon {
+	height: calc(100%/2);
+	width: 99.5%;
+  display:inline-block;
+  margin-top: 17x;
+}
+.hexagon img {
+  margin-top:-125px;
+}
+ 
+.hexagon:before,
+.hexagon:after {
+	content: "";
+	position: absolute;
+	background-color: inherit;
+	height: inherit;
+	width: inherit;
+	left: -1px; right: -1px; top: 0; bottom: 0;
+}
+ 
+.hexagon:before {
+	transform: rotateZ(60deg);
+}
+ 
+.hexagon:after {
+	transform: rotateZ(120deg);
+}
+ 
+.hexagon,
+.hexagon:before,
+.hexagon:after {
+	box-sizing: content-box;
+	border: solid 5px var(--mainGreen);
+	border-top-width: 0;
+	border-bottom-width: 0;
+	z-index: -1; /*We need to force the z-index so we can put some text over*/
+}
+ 
+
+ 
+.row{
+	clear:both; /*to reset all the configs*/
+	float:left;
+	display: flex; /* using some flex to aline to center */
+	justify-content: center;
+	overflow:hidden; /*this is for after, when we add more hex's*/
+	padding-top:50px; /* To take care of the top part of the hex, needs changing if we change the size on the wrapper*/
+	position:relative; 
+}
+
+h2 img {
+  margin-top: 150px;
+}
+.fullWidth {
+  width: 100%;
+  transform: scale(0.8);
+}
+
+.fullWidth:hover {
+  transition: 1s;
+  transform: scale(1);
+}
+
+h4 u {
+  color: var(--mainGreen);
+}
+
+.navbar-nav {
+  align-self:center;
+}
+
+.form{
+  margin-right: 0px !important;
+  padding-right: 0px !important;
+}
+
+.mailing-list-signup-container{
+  width: 50%;
+  text-align: center;
+  border-style: solid;
+  border-color: var(--mainYellow);
+  border-radius: 15px;
+  margin-left: 25%;
+  margin-top: 100px;
+  padding: 30px;
+}
+
+.clear{
+  margin-top: 15px;
+}
+
+.valley{
+  width: 100%;
+  margin-top: 0px;
+  max-height: 800px;
+  overflow: hidden;
+}
+
+.centered{
+    position: absolute;
+    color: var(--mainBrown);
+    font-size: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
