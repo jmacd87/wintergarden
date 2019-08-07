@@ -10,8 +10,11 @@ export default class Navbar extends Component {
     return (
       <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
         <Link to="/">
+          <div className="logo">
           <img src=
-          "https://i.ibb.co/Jd9CvBL/wintergarden-removebg-preview.png" height="80" width="200" alt="store" className="navbar-brand" />
+          "https://i.ibb.co/998V6Ff/iconlogocrop.png" width="100px" alt="store" className="navbar-brand"/>
+          <h1>Winter Garden</h1>
+          </div>
         </Link>
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5">
