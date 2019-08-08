@@ -174,9 +174,10 @@ strong {
 }
 
 .moose {
-  display: inline-block;
-  position:relative;
-  z-index: 1;
+  margin-top: 200px;
+  z-index: 3;
+  height: 500px;
+  width: 500px;
 }
 
 
@@ -355,18 +356,21 @@ h4 u {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
     
   }
 .logo h1{
+  font-size: 30px;
   display: inline-block;
   color: var(--mainGreen);
-  margin-top: 35px;
+  margin-top: 20px;
   margin-left: 0px;
   margin-right: 8em;
   z-index: 3;
 }
 
 .logo {
+  display: inline-block;
 }
 .navbar-brand img {
   z-index:1;
@@ -382,9 +386,47 @@ body {
 background-image: url('https://i.pinimg.com/originals/27/a6/68/27a66840d494016ff0b634c607610105.jpg');
 min-height: 100%;
 position: relative;
-opacity:0.70;
+opacity:0.60;
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
+}
+
+.pimg2{
+  background-image: url('https://img5.goodfon.com/wallpaper/nbig/5/5e/conaire-digney-by-conaire-digney-snap-hunt-art-environments.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  z-index:1;
+  min-height: 800px;
+}
+
+.pimg3{
+  background-image: url('https://static.vecteezy.com/system/resources/previews/000/085/439/non_2x/free-forest-landscape-with-flock-of-birds-vector.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  z-index:1;
+  min-height: 800px;
+}
+
+.pimg4{
+  background-image: url('https://img2.goodfon.com/wallpaper/nbig/c/53/art-narisovannyy-peyzazh-lisa.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  z-index:1;
+  min-height: 800px;
+}
+.parralax p{
+  text-align: right;
+  margin-top: -200px;
+  margin-right: 300px;
 }
