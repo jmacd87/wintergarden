@@ -78,6 +78,7 @@ body {
 .navbar p {
   color: var(--mainGreen);
   font-family: 'Alegreya Sans SC';
+  font-size: 25px;
 }
 
 .container {
@@ -356,3 +357,34 @@ h4 u {
     transform: translate(-50%, -50%);
     
   }
+.logo h1{
+  display: inline-block;
+  color: var(--mainGreen);
+  margin-top: 35px;
+  margin-left: 0px;
+  margin-right: 8em;
+  z-index: 3;
+}
+
+.logo {
+}
+.navbar-brand img {
+  z-index:1;
+}
+
+body {
+  height:100%;
+  margin: 0;
+
+}
+
+.pimg1 {
+background-image: url('https://i.pinimg.com/originals/27/a6/68/27a66840d494016ff0b634c607610105.jpg');
+min-height: 100%;
+position: relative;
+opacity:0.70;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
