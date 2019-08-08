@@ -10,7 +10,9 @@ import Default from "./components/Default";
 import Modal from "./components/Modal";
 import About from "./components/About";
 import Contact from "./components/Contact";
+
 class App extends Component {
+  
   render() {
     return (
       <React.Fragment>
