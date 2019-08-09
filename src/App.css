@@ -28,7 +28,9 @@ body {
 .text-bright {
   color: var(--mainBlue);
 }
-
+.navbar {
+  z-index:3;
+}
 .btn-black {
   background: transparent;
   text-transform: capitalize;
@@ -438,29 +440,29 @@ background-attachment: fixed;
 @import url('https://fonts.googleapis.com/css?family=Markazi+Text|Raleway');
 
 
-body {
-  margin: 0;
-}
 
 #parallax-container {
   display: block;
-  height: 750px;
+  height: 100%;
 }
 
 #parallax-container div {
   position: fixed;
-  top: 0;
+  top: 0px;
   background-position: center !important;
   transform: translateY(0px);
   height: 750px;
   width: 100%;
+  z-index: 0;
 }
 
 #content {
+  margin-top:600px;
   position: relative;
   background-color: #030f33;
   color: #ffffff;
   padding: 100px;
+  z-index: 0;
 }
 
 #content h1 {

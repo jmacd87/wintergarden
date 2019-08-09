@@ -24,7 +24,15 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/caef68614d.js"></script>
-    <title>Store</title>
+    <script> window.addEventListener('scroll', () => {
+      let parent =  document.getElementById('parallax-container');
+      let children = parent.getElementsByTagName('div');
+      for(let i = 0; i < children.length; i++) {
+        children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+      }
+    }, false)
+    </script>
+    <title>Winter Garden Games</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
