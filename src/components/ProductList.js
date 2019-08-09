@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-import sticker from '../sticker.svg';
 import '../App.css';
-import Carousel from 'react-3d-carousels';
 
 export default class ProductList extends Component {
   render() {
+    
     return (
       
       <React.Fragment>  
-        <div className="parralax">  
+  <h1>Parallax Effect</h1>
+    <p>The parallax code is from Collin Delphia's CodePen <a href="https://codepen.io/Kikoku/pen/PWyyVg">here</a>.</p>
+    <p>I created the artwork in Adobe Illustrator based on the Animal Silhouette Moonlight Vector Illustration - Illustrator Tutorial by tutvid <a href="https://www.youtube.com/watch?v=RtnCn65MdN0">here</a>.</p>
+        <div className="parralax-container">  
               <section class="section section-dark">
             <div className="valley">
               <div className="pimg1">
@@ -18,23 +20,22 @@ export default class ProductList extends Component {
             </div>
             </section>
 
-            <section class="section section-dark">
+
             <div className="forest">
               <div className="pimg2">
-            <img src={require('../Media/moose.png')} className="moose"/>
+            <img src={require('../Media/moose-v3.png')} className="moose"/>
               <p>lorem asl;kasjd;flkajsdl;flkajsdl </p>
             </div>
             </div>
-            </section>
 
-            <section class="section section-dark">
+
             <div className="trees">
               <div className="pimg3">
             <img src={require('../Media/hummingbird.png')} className="moose"/>
               <p>lorem asl;kasjd;flkajsdl;flkajsdl </p>
             </div>
             </div>
-            </section>
+
 
             <section class="section section-dark">
             <div className="hills">
@@ -44,9 +45,9 @@ export default class ProductList extends Component {
             </div>
             </div>
             </section>
+          </div>
 
 
-</div>
       </React.Fragment>
       // <Product />
     );
