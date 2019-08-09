@@ -402,7 +402,7 @@ background-attachment: fixed;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  z-index:1;
+  z-index:3;
   min-height: 800px;
 }
 
@@ -413,8 +413,8 @@ background-attachment: fixed;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  z-index:1;
-  min-height: 800px;
+  z-index:3;
+  min-height: 750px;
 }
 
 .pimg4{
@@ -424,10 +424,10 @@ background-attachment: fixed;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;
-  z-index:1;
+  z-index:3;
   min-height: 800px;
 }
-.parralax p{
+.parallax p{
   text-align: right;
   margin-top: -200px;
   margin-right: 300px;
@@ -443,26 +443,24 @@ background-attachment: fixed;
 
 #parallax-container {
   display: block;
-  height: 100%;
+  height: 750px !important;
 }
-
 #parallax-container div {
   position: fixed;
-  top: 0px;
+  top: 0;
   background-position: center !important;
   transform: translateY(0px);
   height: 750px;
   width: 100%;
-  z-index: 0;
 }
 
 #content {
-  margin-top:600px;
+  
   position: relative;
+  margin-top: -200px;
   background-color: #030f33;
   color: #ffffff;
-  padding: 100px;
-  z-index: 0;
+
 }
 
 #content h1 {
@@ -475,3 +473,4 @@ background-attachment: fixed;
   font-size: 18px;
   font-family: 'Raleway', sans-serif;
 }
+
