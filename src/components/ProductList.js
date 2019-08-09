@@ -7,9 +7,7 @@ export default class ProductList extends Component {
     return (
       
       <React.Fragment>  
-  <h1>Parallax Effect</h1>
-    <p>The parallax code is from Collin Delphia's CodePen <a href="https://codepen.io/Kikoku/pen/PWyyVg">here</a>.</p>
-    <p>I created the artwork in Adobe Illustrator based on the Animal Silhouette Moonlight Vector Illustration - Illustrator Tutorial by tutvid <a href="https://www.youtube.com/watch?v=RtnCn65MdN0">here</a>.</p>
+
         <div className="parralax-container">  
               <section class="section section-dark">
             <div className="valley">
@@ -46,8 +44,22 @@ export default class ProductList extends Component {
             </div>
             </section>
           </div>
+            <div id="parallax-container">
+   <div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/SkyBG.png")'}}></div>
+<div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Clouds1.png")'}}></div>
+  <div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Clouds2.png")'}}></div>
+<div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Clouds3.png")'}}></div>
+  <div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Moon.png")'}}></div>
+  <div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Hill.png")'}}></div>
+<div id="content"> 
+  <h1>Parallax Effect</h1>
+    <p>The parallax code is from Collin Delphia's CodePen <a href="https://codepen.io/Kikoku/pen/PWyyVg">here</a>.</p>
+    <p>I created the artwork in Adobe Illustrator based on the Animal Silhouette
+       Moonlight Vector Illustration - Illustrator Tutorial by tutvid <a href="https://www.youtube.com/watch?v=RtnCn65MdN0">here</a>.</p>
+</div> 
+  
 
-
+</div>
       </React.Fragment>
       // <Product />
     );
