@@ -144,7 +144,7 @@ strong {
   height: 200%;
   opacity: 0;
   overflow:hidden;
-  transform: rotate(30deg);
+  transform: rotate(15deg);
   background: linear-gradient(
     to right, 
     rgba(35, 23, 23, 0.13) 0%,
@@ -152,7 +152,7 @@ strong {
     rgba(255, 255, 255, 0.5) 92%,
     rgba(255, 255, 255, 0.0) 100%
   );
-  -webkit-animation-duration: 5s;
+  -webkit-animation-duration: 6s;
 -webkit-animation-iteration-count: infinite;
 }
 

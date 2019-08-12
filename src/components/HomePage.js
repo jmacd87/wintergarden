@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import '../App.css';
 
-export default class ProductList extends Component {
+export default class HomePage extends Component {
   render() {
     
     return (
@@ -17,11 +17,9 @@ export default class ProductList extends Component {
             </div> 
 
         <div id="content"> 
-            <h1>Parallax Effect</h1>
-              <p>The parallax code is from Collin Delphia's CodePen <a href="https://codepen.io/Kikoku/pen/PWyyVg">here</a>.</p>
-              <p>I created the artwork in Adobe Illustrator based on the Animal Silhouette
-                Moonlight Vector Illustration - Illustrator Tutorial by tutvid <a href="https://www.youtube.com/watch?v=RtnCn65MdN0">here</a>.
-                
+            <h1>Limitless Valley</h1>
+              <p>The best board game ever.</p>
+              <p>Play for ages.
                 </p>
             <div className="hills">
               <div className="pimg4">
