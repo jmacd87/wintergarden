@@ -7,13 +7,17 @@ export default class HomePage extends Component {
     return (
       
       <React.Fragment>  
+
             <div id="parallax-container">
-               <div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/SkyBG.png")'}}></div>
-                <div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Clouds1.png")'}}></div>
-                  <div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Clouds2.png")'}}></div>
-                    <div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Clouds3.png")'}}></div>
-                  <div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Moon.png")'}}></div>
-                <div style={{background: 'url("https://cdn2.hubspot.net/hubfs/1951013/Parallax/Hill.png")'}}></div>
+               <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax0.png")'}}></div>
+                <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax1.png")'}}></div>
+                
+                    <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax3.png")'}}></div>
+                  <div style={{background: 'http://www.firewatchgame.com/images/parallax/parallax4.png")'}}></div>
+                <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax5.png")'}}></div>
+                <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax6.png")'}}></div>
+                <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax7.png")'}}></div>
+                <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax8.png")'}}></div>
             </div> 
 
         <div id="content"> 

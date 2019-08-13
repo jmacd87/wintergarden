@@ -10,11 +10,13 @@ import Default from "./components/Default";
 import Modal from "./components/Modal";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 class App extends Component {
 
   render() {
     return (
+      <ParallaxProvider>
       <React.Fragment>
       
         <Navbar />
@@ -29,7 +31,7 @@ class App extends Component {
         </Switch>
         <Modal />
       </React.Fragment>
-
+</ParallaxProvider>
     );
   }
 }
