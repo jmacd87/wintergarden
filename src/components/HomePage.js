@@ -26,34 +26,10 @@ export default class HomePage extends Component {
               <p>The best board game ever.</p>
               <p>Play for ages.
                 </p>
-            <div className="hills">
-              <div className="pimg4">
-            <img src={require('../Media/fox.png')} className="moose"/>
-              <p>lorem asl;kasjd;flkajsdl;flkajsdl </p>
-            </div>
-            </div>
-            <div className="valley">
-              <div className="pimg1">
-            <img src="https://i.pinimg.com/originals/27/a6/68/27a66840d494016ff0b634c607610105.jpg" className="pimg1" alt="valley"/>
-            <div className="centered">Limitless Valley</div>
-            </div>
-            </div>
+                <div className="moose">
+                <img src={require('../Media/moose-v3.png')} className="moose"/>
 
-            <div className="forest">
-              <div className="pimg2">
-                  <img src={require('../Media/moose-v3.png')} className="moose"/>
-                  <p>lorem asl;kasjd;flkajsdl;flkajsdl </p>
-              </div>
-            </div>
-
-
-            <div className="trees">
-              <div className="pimg3">
-                <img src={require('../Media/hummingbird.png')} className="moose"/>
-                <p>lorem asl;kasjd;flkajsdl;flkajsdl </p>
-              </div>
-            </div>
-        </div>
+            </div></div>
 
 
 

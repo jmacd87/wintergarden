@@ -52,7 +52,7 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  background-color: var(--mainBrown) !important;
+  background-color: #210002 !important;
   max-height: 100px;
   font-family:'Alegreya Sans SC'; 
   font-color: var(--mainYellow)!important;

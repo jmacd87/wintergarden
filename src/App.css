@@ -176,10 +176,13 @@ strong {
 }
 
 .moose {
-  margin-top: 200px;
+  position: absolute;
   z-index: 3;
   height: 500px;
   width: 500px;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -466,10 +469,11 @@ background-attachment: fixed;
 #content {
   
   position: relative;
-  margin-top: 120px;
+  margin-top: 185px;
   background-color: #210002;
   color: var(--mainGreen);
   font-family: 'Alegreya Sans SC';
+  min-height: 1000px;
 
 }
 
