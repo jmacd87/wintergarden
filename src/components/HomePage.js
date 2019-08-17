@@ -28,8 +28,14 @@ export default class HomePage extends Component {
                 </p>
                 <div className="moose">
                 <img src={require('../Media/moose-v3.png')} className="moose"/>
-
-            </div></div>
+                </div>
+                <div className="moose">
+                <img src={require('../Media/fox.png')} className="fox"/>
+            </div>
+            <div className="moose">
+                <img src={require('../Media/hummingbird.png')} className="bluejay"/>
+            </div>
+            </div>
 
 
 
