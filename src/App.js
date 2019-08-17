@@ -16,7 +16,7 @@ class App extends Component {
 
   render() {
     return (
-      <ParallaxProvider>
+      <ParallaxProvider scrollAxis="HORIZONTAL">
       <React.Fragment>
       
         <Navbar />

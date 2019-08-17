@@ -9,8 +9,9 @@ export default class HomePage extends Component {
       <React.Fragment>  
 
             <div id="parallax-container">
+            
                <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax0.png")'}}></div>
-                <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax1.png")'}}></div>
+                <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax1.png")'}}><img src={require('../Media/First-Drafts-V4.png')} className="logoMain"/></div>
                 
                     <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax3.png")'}}></div>
                   <div style={{background: 'http://www.firewatchgame.com/images/parallax/parallax4.png")'}}></div>
