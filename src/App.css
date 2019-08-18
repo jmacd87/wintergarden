@@ -189,15 +189,17 @@ strong {
 .bluejay {
   display: inline-block;
   z-index: 0;
+  margin-top: -90px;
   height: 400px;
   width: 400px;
   margin-left: 70%;
-  margin-top: -200px;
+
 }
 
 .fox {
   display: inline-block;
-  z-index: 0;
+  z-index: -2;
+  margin-top: 100px;
   height: 400px;
   width: 400px;
   left: 50%;
@@ -474,7 +476,8 @@ background-attachment: fixed;
 #content {
   
   position: relative;
-  margin-top: 185px;
+  margin-top: 180px;
+  padding-top:100px;
   background-color: #210002;
   color: var(--mainGreen);
   font-family: 'Alegreya Sans SC';
