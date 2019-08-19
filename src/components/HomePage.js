@@ -14,7 +14,7 @@ export default class HomePage extends Component {
                 <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax1.png")'}}><img src={require('../Media/First-Drafts-V4.png')} className="logoMain"/></div>
                 
                     <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax3.png")'}}></div>
-                  <div style={{background: 'http://www.firewatchgame.com/images/parallax/parallax4.png")'}}></div>
+                  <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax4.png")'}}></div>
                 <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax5.png")'}}></div>
                 <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax6.png")'}}></div>
                 <div style={{background: 'url("http://www.firewatchgame.com/images/parallax/parallax7.png")'}}></div>
@@ -40,7 +40,7 @@ export default class HomePage extends Component {
 
 
       </React.Fragment>
-      // <Product />
+
     );
   }
 }

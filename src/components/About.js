@@ -5,9 +5,11 @@ export default class About extends Component {
     render() {
 
       return (
-        <div className="container">
-          <div className="row">
-            <div className="col-10 mx-auto text-center text-title text-uppercase pt-5">
+        <div id="bodywrap">
+        <div id="page-wrap">
+          <div id="fancy-fancy">
+          <div id="inner-wrap">
+              <img src="https://publicdomainvectors.org/photos/1473020652.png"></img>
               <h1 className="display-3"><strong>About Us</strong></h1>
               <h2>We are Wintergarden!</h2>
               <h4>
@@ -20,14 +22,13 @@ Reach out to us:
 <br/>
 </h4>
 <h2>josh@wintergardengd.com</h2>
-  
-	<div className="row fullWidth" id="firstRow">
+
 		<div className="hexWrapper">
 			<div className="hexagon">
       <img src={require('../Media/josh.png')} />
 			</div>
 		</div>
-	</div>
+
  <h2><strong>Josh Robertson</strong></h2>
 <h4><u>Specialty:</u> Founder, owner, lead designer.</h4>
 <h4><u>Super power:</u> Turning all ideas into good ideas.</h4>
@@ -39,8 +40,9 @@ Reach out to us:
 <h4><strong>Super power:</strong>Honing all the smallest details.</h4>
 <h4><strong>Hits:</strong> Perfect sketchbooks.</h4>
 <h4><strong>Misses:</strong> Dirty beaches.</h4>
-            </div>
           </div>
+        </div>
+        </div>
         </div>
       );
     }

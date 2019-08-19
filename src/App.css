@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text|Raleway');
 :root {
   --mainBrown: #231717;
   --mainGrey: #9A8C7F;
@@ -11,10 +12,19 @@
 
 body {
   font-family: 'Alegreya Sans SC'!important;
-  background: var(--mainGrey) !important;
+  /* background: var(--mainGrey) !important; */
   color: var(--mainDark) !important;
-}
+  height:100%;
+  margin: 0;
+  
 
+}
+h4 u {
+  color: var(--mainGreen);
+}
+h2 img {
+  margin-top: 150px;
+}
 .text-title {
   font-family: "Oswald", sans-serif !important;
   letter-spacing: 0.3rem;
@@ -28,9 +38,64 @@ body {
 .text-bright {
   color: var(--mainBlue);
 }
+
+/*NAVBAR*/
 .navbar {
   z-index:3;
 }
+
+.navbar p {
+  color: var(--mainGreen);
+  font-family: 'Alegreya Sans SC';
+  font-size: 25px;
+}
+
+.navbar-brand{
+  opacity: .9;
+  height:80px;
+  width:80px;
+}
+
+.logo h1{
+  display:inline-block;
+}
+.nav-link {
+  margin-top: 15px;
+  align-content: center;
+}
+.nav-link:hover {
+  margin-top: 15px;
+  transform: scale(1.2);
+  transition: .3s;
+}
+/* .nav-link:visited {
+  background-color: red !important;
+} */
+.nav-link.active{
+  transform:scale(1.2);
+}
+.navbar-nav {
+  align-self:center;
+}
+.navbar-brand img {
+  z-index:1;
+}
+
+.logo h1{
+  font-size: 30px;
+  display: inline-block;
+  color: var(--mainGreen);
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-right: 6em;
+  z-index: 3;
+}
+
+.logo {
+  display: inline-block;
+ 
+}
+
 .btn-black {
   background: transparent;
   text-transform: capitalize;
@@ -61,27 +126,6 @@ body {
     z-index: 1;
   
 }
-.sticker {
-  position: relative;
-  display: block;
-  height: 150px;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  z-index: 2;
-  transition: transform 1s;
-}
-
-.sticker:hover {
-  transform: rotate(15deg);
-
-}
-.navbar p {
-  color: var(--mainGreen);
-  font-family: 'Alegreya Sans SC';
-  font-size: 25px;
-}
 
 .container {
   color: var(--mainBrown);
@@ -102,24 +146,7 @@ body {
 strong {
   margin-top: 20px!important;
 }
-.navbar-brand{
-  opacity: .9;
-}
-.nav-link {
-  margin-top: 15px;
-  align-content: center;
-}
-.nav-link:hover {
-  margin-top: 15px;
-  transform: scale(1.2);
-  transition: .3s;
-}
-/* .nav-link:visited {
-  background-color: red !important;
-} */
-.nav-link.active{
-  transform:scale(1.2);
-}
+
 .icon {
   position: relative;
   overflow: hidden;
@@ -175,6 +202,7 @@ strong {
   opacity: 0;
 }
 
+/* ANIMALS */
 .moose {
   position: absolute;
   z-index: 4;
@@ -213,7 +241,7 @@ strong {
   overflow:hidden;
 } */
 
-
+/* Contact Form */
 .contactForm input {
   display: inline-block;
   box-sizing: border-box;
@@ -250,6 +278,7 @@ strong {
   width: 90% !important;
 }
 
+/* Hexagon photo wrapper */
 .hexWrapper {
 	text-align: center;
   margin-top: 80px;
@@ -300,9 +329,7 @@ strong {
 	border-bottom-width: 0;
 	z-index: -1; /*We need to force the z-index so we can put some text over*/
 }
- 
 
- 
 .row{
 	clear:both; /*to reset all the configs*/
 	float:left;
@@ -313,9 +340,7 @@ strong {
 	position:relative; 
 }
 
-h2 img {
-  margin-top: 150px;
-}
+
 .fullWidth {
   width: 100%;
   transform: scale(0.8);
@@ -326,13 +351,7 @@ h2 img {
   transform: scale(1);
 }
 
-h4 u {
-  color: var(--mainGreen);
-}
 
-.navbar-nav {
-  align-self:center;
-}
 
 .form{
   margin-right: 0px !important;
@@ -371,20 +390,7 @@ h4 u {
     z-index: 3;
     
   }
-.logo h1{
-  font-size: 30px;
-  display: inline-block;
-  color: var(--mainGreen);
-  margin-top: 20px;
-  margin-left: 0px;
-  margin-right: 8em;
-  z-index: 3;
-}
 
-.logo {
-  display: inline-block;
- 
-}
 .logoMain{
   position:absolute;
   height:250px;
@@ -392,15 +398,9 @@ h4 u {
  top: 25%;
  transform: translate(-50%, -50%);
 }
-.navbar-brand img {
-  z-index:1;
-}
 
-body {
-  height:100%;
-  margin: 0;
 
-}
+
 
 .pimg1 {
 background-image: url('https://i.pinimg.com/originals/27/a6/68/27a66840d494016ff0b634c607610105.jpg');
@@ -455,10 +455,6 @@ background-attachment: fixed;
   margin-top:0px;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Markazi+Text|Raleway');
-
-
-
 #parallax-container {
   display: block;
   height: 750px !important;
@@ -476,7 +472,7 @@ background-attachment: fixed;
 #content {
   
   position: relative;
-  margin-top: 180px;
+  margin-top: 160px;
   padding-top:100px;
   background-color: #210002;
   color: var(--mainGreen);
@@ -501,3 +497,22 @@ background-attachment: fixed;
   margin-bottom: 200px;
 }
 
+#body-wrap {
+  background: #404143;
+  background-image: url('https://i.ibb.co/x6JRmNp/bodytiletop.jpg');
+}
+
+#page-wrap{ 
+  background-image: url('https://i.ibb.co/GF6vH3R/bodytilebottom-tall.jpg');           
+  background-size: 1200px 2500px;
+}
+#fancy-fancy{ 
+  background-image: url('https://i.ibb.co/T8HJdKk/circlepattern.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+#inner-wrap{ 
+  width: 500px; 
+  background: var(--mainGreen); 
+  margin: 0 auto; 
+  min-height: 2000px; }
