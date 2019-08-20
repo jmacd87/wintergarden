@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Alegreya Sans SC'!important;
-  /* background: var(--mainGrey) !important; */
+  background: var(--mainGrey) !important;
   color: var(--mainDark) !important;
   height:100%;
   margin: 0;
@@ -474,7 +474,7 @@ background-attachment: fixed;
   position: relative;
   margin-top: 160px;
   padding-top:100px;
-  background-color: #210002;
+  background-color:  #f2e6e2;
   color: var(--mainGreen);
   font-family: 'Alegreya Sans SC';
   min-height: 1000px;
@@ -504,7 +504,8 @@ background-attachment: fixed;
 
 #page-wrap{ 
   background-image: url('https://i.ibb.co/GF6vH3R/bodytilebottom-tall.jpg');           
-  background-size: 1200px 2500px;
+  background-size: 1000px 2500px;
+
 }
 #fancy-fancy{ 
   background-image: url('https://i.ibb.co/T8HJdKk/circlepattern.png');
