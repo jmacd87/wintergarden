@@ -474,7 +474,7 @@ background-attachment: fixed;
   margin-top: 160px;
   padding-top:100px;
   background-color:  #E0DEDB;
-  color: var(--mainGreen);
+  color: #795D4E;
   font-family: 'Alegreya Sans SC';
   min-height: 1000px;
 
@@ -484,6 +484,7 @@ background-attachment: fixed;
   font-size: 100px;
   text-align: center;
   font-family: 'Alegreya Sans SC';
+  color:#3C3B3C;
 }
 
 #content p {
