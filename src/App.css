@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Alegreya Sans SC'!important;
-  /* background: var(--mainGrey) !important; */
+  background: var(--mainGrey) !important;
   color: var(--mainDark) !important;
   height:100%;
   margin: 0;
@@ -205,7 +205,6 @@ strong {
 /* ANIMALS */
 .moose {
   position: absolute;
-  z-index: 4;
   height: 500px;
   width: 500px;
   left: 50%;
@@ -217,7 +216,7 @@ strong {
 .bluejay {
   display: inline-block;
   z-index: 0;
-  margin-top: -90px;
+  margin-top: 80%;
   height: 400px;
   width: 400px;
   margin-left: 70%;
@@ -227,10 +226,10 @@ strong {
 .fox {
   display: inline-block;
   z-index: -2;
-  margin-top: 100px;
+  margin-top: 120%;
   height: 400px;
   width: 400px;
-  left: 50%;
+  left: 45%;
   top:50%;
   transform: translate(-50%, -50%);
 }
@@ -474,8 +473,8 @@ background-attachment: fixed;
   position: relative;
   margin-top: 160px;
   padding-top:100px;
-  background-color: #210002;
-  color: var(--mainGreen);
+  background-color:  #E0DEDB;
+  color: #795D4E;
   font-family: 'Alegreya Sans SC';
   min-height: 1000px;
 
@@ -485,6 +484,7 @@ background-attachment: fixed;
   font-size: 100px;
   text-align: center;
   font-family: 'Alegreya Sans SC';
+  color:#3C3B3C;
 }
 
 #content p {
@@ -504,7 +504,8 @@ background-attachment: fixed;
 
 #page-wrap{ 
   background-image: url('https://i.ibb.co/GF6vH3R/bodytilebottom-tall.jpg');           
-  background-size: 1200px 2500px;
+  background-size: 1000px 2500px;
+
 }
 #fancy-fancy{ 
   background-image: url('https://i.ibb.co/T8HJdKk/circlepattern.png');
