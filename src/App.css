@@ -1,6 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Markazi+Text|Raleway');
+
+
+@media (min-width: 1000px){
+  #content{
+    margin-top: 160px !important;
+  }
+}
 :root {
   --mainBrown: #231717;
   --mainGrey: #9A8C7F;
@@ -16,27 +23,6 @@ body {
   color: var(--mainDark) !important;
   height:100%;
   margin: 0;
-  
-
-}
-h4 u {
-  color: var(--mainGreen);
-}
-h2 img {
-  margin-top: 150px;
-}
-.text-title {
-  font-family: "Oswald", sans-serif !important;
-  letter-spacing: 0.3rem;
-  text-transform: uppercase;
-}
-
-.text-blue {
-  color: var(--mainGreen);
-}
-
-.text-bright {
-  color: var(--mainBlue);
 }
 
 /*NAVBAR*/
@@ -56,9 +42,6 @@ h2 img {
   width:80px;
 }
 
-.logo h1{
-  display:inline-block;
-}
 .nav-link {
   margin-top: 15px;
   align-content: center;
@@ -68,63 +51,19 @@ h2 img {
   transform: scale(1.2);
   transition: .3s;
 }
-/* .nav-link:visited {
-  background-color: red !important;
-} */
-.nav-link.active{
-  transform:scale(1.2);
-}
-.navbar-nav {
-  align-self:center;
-}
-.navbar-brand img {
-  z-index:1;
-}
 
 .logo h1{
   font-size: 30px;
   display: inline-block;
   color: var(--mainGreen);
-  margin-top: 20px;
+  margin-top: 5px;
   margin-left: 0px;
-  margin-right: 6em;
   z-index: 3;
 }
 
 .logo {
   display: inline-block;
- 
-}
-
-.btn-black {
-  background: transparent;
-  text-transform: capitalize;
-  font-size: 0.8rem !important;
-  color: var(--mainDark);
-  border-radius: 0 !important;
-  border: 0.1rem solid var(--mainDark) !important;
-}
-.btn-black:hover {
-  background: var(--mainDark) !important;
-  color: var(--mainWhite) !important;
-}
-
-.cart-icon {
-  cursor: pointer;
-  font-size: 1.2rem;
-  color: var(--mainBiege);
-}
-
-.board {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: 10px;
-    transform: translate(-50%,-50%);
-    width: 400px;
-    height: 400px;
-    z-index: 1;
-  
+  min-width: 300px;
 }
 
 .container {
@@ -136,322 +75,11 @@ h2 img {
   text-align: center;
   font-family: 'Alegreya Sans SC';
 }
-.container h2 {
-  color: var(--mainGreen);
-}
-.container h1 {
-  color: var(--mainBrown);
-}
 
-strong {
-  margin-top: 20px!important;
-}
-
-.icon {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  border-radius: 5px;
-  color: var(--mainGreen);
-  text-decoration: none;
-  text-align: center;
-  font-family: 'Alegreya Sans SC';
-}
-
-/**
- * The "shine" element
- */
-
-.icon:after {
-  content: "";
-  position: absolute;
-  top: -110%;
-  left: -210%;
-  width: 200%;
-  height: 200%;
-  opacity: 0;
-  overflow:hidden;
-  transform: rotate(15deg);
-  background: linear-gradient(
-    to right, 
-    rgba(35, 23, 23, 0.13) 0%,
-    rgba(35, 23, 23, 0.13) 77%,
-    rgba(255, 255, 255, 0.5) 92%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
-  -webkit-animation-duration: 6s;
--webkit-animation-iteration-count: infinite;
-}
-
-/* Hover state - trigger effect */
-
-.icon:hover:after {
-  opacity: 1;
-  top: -30%;
-  left: -30%;
-  transition-property: left, top, opacity;
-  transition-duration: 0.7s, 0.7s, 0.15s;
-  transition-timing-function: ease;
-  -webkit-animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-}
-
-/* Active state */
-
-.icon:active:after {
-  opacity: 0;
-}
-
-/* ANIMALS */
-.moose {
-  position: absolute;
-  height: 500px;
-  width: 500px;
-  left: 50%;
-  top:50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.bluejay {
-  display: inline-block;
-  z-index: 0;
-  margin-top: 80%;
-  height: 400px;
-  width: 400px;
-  margin-left: 70%;
-
-}
-
-.fox {
-  display: inline-block;
-  z-index: -2;
-  margin-top: 120%;
-  height: 400px;
-  width: 400px;
-  left: 45%;
-  top:50%;
-  transform: translate(-50%, -50%);
-}
-
-/* .josh {
-  border: solid;
-  border-color: var(--mainBrown);
-  overflow:hidden;
-} */
-
-/* Contact Form */
-.contactForm input {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 90%;
-}
-
-.contactForm {
-  width:30%;
-  margin-left: 35%;
-  margin-top:5%;
-  border: 3px;
-  border-color: var(--mainYellow);
-  
-  border-style: solid;
-  border-radius: 25px;
-  padding: 25px;
-  padding-right: 5px;
-  margin-bottom: 50px;
-}
-
-
-.contactForm input[type=submit] {
-  width: 90%;
-  border-radius: 15px;
-
-}
-.contactForm input[type=submit]:hover {
-  transition: 1s;
-  background-color:var(--mainYellow)
-
-}
-
-.contactForm textarea {
-  width: 90% !important;
-}
-
-/* Hexagon photo wrapper */
-.hexWrapper {
-	text-align: center;
-  margin-top: 80px;
-  margin-bottom: 0px;
-	position: relative;
-	display: inline-block;
-	width: 430px;
-	height: 500px;
-	min-width: 150px;
-	min-height: 150px;
-	float:left;
-}			
-	
-.hexagon {
-	height: calc(100%/2);
-	width: 99.5%;
-  display:inline-block;
-  margin-top: 17x;
-}
-.hexagon img {
-  margin-top:-125px;
-}
- 
-.hexagon:before,
-.hexagon:after {
-	content: "";
-	position: absolute;
-	background-color: inherit;
-	height: inherit;
-	width: inherit;
-	left: -1px; right: -1px; top: 0; bottom: 0;
-}
- 
-.hexagon:before {
-	transform: rotateZ(60deg);
-}
- 
-.hexagon:after {
-	transform: rotateZ(120deg);
-}
- 
-.hexagon,
-.hexagon:before,
-.hexagon:after {
-	box-sizing: content-box;
-	border: solid 5px var(--mainGreen);
-	border-top-width: 0;
-	border-bottom-width: 0;
-	z-index: -1; /*We need to force the z-index so we can put some text over*/
-}
-
-.row{
-	clear:both; /*to reset all the configs*/
-	float:left;
-	display: flex; /* using some flex to aline to center */
-	justify-content: center;
-	overflow:hidden; /*this is for after, when we add more hex's*/
-	padding-top:50px; /* To take care of the top part of the hex, needs changing if we change the size on the wrapper*/
-	position:relative; 
-}
-
-
-.fullWidth {
-  width: 100%;
-  transform: scale(0.8);
-}
-
-.fullWidth:hover {
-  transition: 1s;
-  transform: scale(1);
-}
-
-
-
-.form{
-  margin-right: 0px !important;
-  padding-right: 0px !important;
-}
-
-.mailing-list-signup-container{
-  width: 50%;
-  text-align: center;
-  border-style: solid;
-  border-color: var(--mainYellow);
-  border-radius: 15px;
-  margin-left: 25%;
-  margin-top: 100px;
-  padding: 30px;
-}
-
-.clear{
-  margin-top: 15px;
-}
-
-.valley{
-  width: 100%;
-  margin-top: 0px;
-  max-height: 800px;
-  overflow: hidden;
-}
-
-.centered{
-    position: absolute;
-    color: var(--mainBrown);
-    font-size: 80px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    
-  }
-
-.logoMain{
-  position:absolute;
-  height:250px;
- left: 50%;
- top: 25%;
- transform: translate(-50%, -50%);
-}
-
-
-
-
-.pimg1 {
-background-image: url('https://i.pinimg.com/originals/27/a6/68/27a66840d494016ff0b634c607610105.jpg');
-min-height: 100%;
-position: relative;
-opacity:0.60;
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-}
-
-.pimg2{
-  background-image: url('https://img5.goodfon.com/wallpaper/nbig/5/5e/conaire-digney-by-conaire-digney-snap-hunt-art-environments.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  z-index:3;
-  min-height: 800px;
-}
-
-.pimg3{
-  background-image: url('https://static.vecteezy.com/system/resources/previews/000/085/439/non_2x/free-forest-landscape-with-flock-of-birds-vector.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  z-index:3;
-  min-height: 750px;
-}
-
-.pimg4{
-  background-image: url('https://img2.goodfon.com/wallpaper/nbig/c/53/art-narisovannyy-peyzazh-lisa.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  z-index:3;
-  min-height: 800px;
-}
 .parallax p{
   text-align: right;
   margin-top: -200px;
   margin-right: 300px;
-}
-
-.section {
-  margin-top:0px;
 }
 
 #parallax-container {
@@ -469,22 +97,20 @@ background-attachment: fixed;
 }
 
 #content {
-  
   position: relative;
-  margin-top: 160px;
-  padding-top:100px;
-  background-color:  #E0DEDB;
-  color: #795D4E;
+  margin-top: 220px;
+  padding-top:50px;
+  background-color:  #210002;
+  color: var(--mainGreen);
   font-family: 'Alegreya Sans SC';
-  min-height: 1000px;
-
+  min-height: 500px;
 }
 
 #content h1 {
   font-size: 100px;
   text-align: center;
   font-family: 'Alegreya Sans SC';
-  color:#3C3B3C;
+  color:var(--mainGrey);
 }
 
 #content p {
@@ -496,24 +122,3 @@ background-attachment: fixed;
   margin-top:200px;
   margin-bottom: 200px;
 }
-
-#body-wrap {
-  background: #404143;
-  background-image: url('https://i.ibb.co/x6JRmNp/bodytiletop.jpg');
-}
-
-#page-wrap{ 
-  background-image: url('https://i.ibb.co/GF6vH3R/bodytilebottom-tall.jpg');           
-  background-size: 1000px 2500px;
-
-}
-#fancy-fancy{ 
-  background-image: url('https://i.ibb.co/T8HJdKk/circlepattern.png');
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
-#inner-wrap{ 
-  width: 500px; 
-  background: var(--mainGreen); 
-  margin: 0 auto; 
-  min-height: 2000px; }

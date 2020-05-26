@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components"; 
-import { ButtonContainer } from "./Button";
+import styled from "styled-components";
 import "../App.css";
 
 
@@ -11,41 +10,26 @@ export default class Navbar extends Component {
       <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
         <Link to="/">
           <div className="logo">
-          <img src=
-          "https://i.ibb.co/998V6Ff/iconlogocrop.png" width="100px" alt="store" className="navbar-brand"/>
-          <h1>Winter Garden</h1>
+            <h1>Company Name</h1>
           </div>
         </Link>
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5">
             <Link to="/" className="nav-link">
-              <p>GAME</p>
+              <p>SERVICES</p>
             </Link>
           </li>
           <li className="nav-item ml-5">
-            <Link to="/About" className="nav-link">
+            <Link to="/" className="nav-link">
               <p> ABOUT</p>
             </Link>
           </li>
           <li className="nav-item ml-5">
-            <Link to="/Contact" className="nav-link">
-               <p> CONTACT</p>
+            <Link to="/" className="nav-link">
+              <p> CONTACT</p>
             </Link>
           </li>
         </ul>
-
-        <Link to="/SignUp" className="ml-auto">
-          <div className="icon">
-            <ButtonContainer>
-            <span className="mr-2">
-              <i className="fas fa-plus" />
-            </span>
-            
-            sign up
-            
-          </ButtonContainer>
-          </div> 
-        </Link>
       </NavWrapper>
     );
   }
